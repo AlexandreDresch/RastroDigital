@@ -37,5 +37,5 @@ export default function useThemeSwitcher() {
       document.documentElement.classList.remove("dark");
     }
   }, [mode]);
-  return [mode, setMode];
+  return [mode, setMode] as const;
 }
